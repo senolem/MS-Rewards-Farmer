@@ -109,15 +109,10 @@ class Browser:
                 "no_proxy": "localhost,127.0.0.1",
             }
 
-        # Obtain webdriver chrome driver version
-        version = self.getChromeVersion()
-        major = int(version.split(".")[0])
-
         driver = webdriver.Chrome(
             options=options,
             seleniumwire_options=seleniumwireOptions,
             user_data_dir=self.userDataDir.as_posix(),
-            version_main=major,
         )
 
         seleniumLogger = logging.getLogger("seleniumwire")
