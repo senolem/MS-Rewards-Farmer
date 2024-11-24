@@ -8,7 +8,7 @@ apprise:
       enabled: True # True or False
   summary: ON_ERROR
 default:
-  geolocation: US # Replace with your country code https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+  geolocation: FR # Replace with your country code https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 logging:
   level: INFO # See https://docs.python.org/3/library/logging.html#logging-levels
 retries:
